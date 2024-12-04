@@ -2,14 +2,11 @@ package day1;
 
 import java.util.HashMap;
 
-import common.MergeSorter;
-
 public class PartTwo {
     public static void main(String[] args) {
         System.out.println("Hello World");
 
         ListReader reader = new ListReader();
-        MergeSorter sorter = new MergeSorter();
 
         Integer[][] lists;
         lists = reader.readLists("day1/input.txt");
