@@ -15,7 +15,6 @@ public class ReportReader {
         try {
             File inputFile = new File(fileName);
             Scanner inputReader = new Scanner(inputFile);
-            Integer i = 0;
             while (inputReader.hasNextLine()) {
                 String data = inputReader.nextLine();
                 int[] ints = Arrays.stream(data.split("\s+")).mapToInt(Integer::parseInt).toArray();
